@@ -1,0 +1,172 @@
+.curiosidades {
+  padding-block: clamp(2.75rem, 5.5vw, 5.5rem);
+}
+.curiosidades h2 {
+  font-size: clamp(2.6rem, 4.4vw, 4.8rem);
+  margin-bottom: 1.5rem;
+}
+.curio-abas {
+  display: flex;
+  gap: .25rem;
+  flex-wrap: wrap;
+  padding: .25rem;
+  width: fit-content;
+  max-width: 100%;
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  background: var(--papel-forte);
+}
+.curio-abas button {
+  min-height: 44px;
+  padding: .45rem clamp(.65rem, 2.1vw, 1.55rem);
+  border: 0;
+  border-radius: 3px;
+  color: var(--texto);
+  background: transparent;
+  font-size: .92rem;
+  font-weight: 600;
+}
+.curio-abas button:hover { background: #dfddcf; }
+.curio-abas button[aria-selected="true"] {
+  background: var(--tinta);
+  color: var(--papel);
+}
+.curio-abas button:focus-visible,
+.curio-historia:focus-visible {
+  outline: 3px solid #196a87;
+  outline-offset: 3px;
+}
+.curio-historia {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: stretch;
+  margin-top: 1.1rem;
+  border: 1px solid var(--linha);
+  border-radius: 6px;
+  background: #fcfaf4;
+}
+.curio-texto {
+  align-self: center;
+  padding: clamp(1.3rem, 3.4vw, 3.2rem);
+}
+.curio-texto h3 {
+  max-width: 25ch;
+  margin-bottom: .85rem;
+  font-size: clamp(1.6rem, 2.7vw, 2.65rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  text-wrap: balance;
+}
+.curio-texto p { max-width: 60ch; color: var(--texto); }
+.curio-texto p + p { margin-top: .65rem; }
+.curio-texto a { margin-top: .6rem; }
+.curio-texto a span { color: #ae3917; }
+.curio-visual {
+  display: grid;
+  place-items: center;
+  min-height: clamp(11rem, 20vw, 17rem);
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+}
+.curio-dados {
+  background: repeating-linear-gradient(0deg, transparent 0 19px, #af765c30 19px 20px), #e9b39b;
+  padding: 1.4rem;
+}
+.ficha-consulta {
+  position: relative;
+  width: min(100%, 16.5rem);
+  padding: 1.15rem 1.35rem;
+  background: #faf5e5;
+  color: #332d26;
+  box-shadow: .32rem .4rem 0 #88553e55;
+  transform: rotate(-3deg);
+}
+.ficha-consulta p {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #b4ab91;
+  font: 650 .78rem/1.4 var(--mono);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.ficha-consulta ol {
+  list-style: none;
+  padding: 0;
+  margin: .6rem 0 0;
+  display: grid;
+  gap: .36rem;
+}
+.ficha-consulta li {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  font: .77rem/1.5 var(--mono);
+}
+.ficha-consulta li::before {
+  content: '';
+  width: .5rem;
+  height: .5rem;
+  flex: none;
+  border: 1px solid #886953;
+}
+.curio-hardware { position: relative; background: #312a27; }
+.curio-hardware img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.curio-futebol { background: #aecbb3; padding: 1.35rem; }
+.campo-futebol {
+  position: relative;
+  width: min(100%, 18rem);
+  aspect-ratio: 1.65;
+  overflow: hidden;
+  border: 2px solid #f4f3d9;
+  outline: 5px solid #658871;
+  background: repeating-linear-gradient(90deg, #51795c 0 12.5%, #5b8465 12.5% 25%);
+  box-shadow: .45rem .55rem 0 #355a4238;
+  transform: rotate(-3deg);
+}
+.campo-futebol::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 50%;
+  border-left: 2px solid #f4f3d9;
+  transform: translateX(-50%);
+}
+.circulo-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22%;
+  aspect-ratio: 1;
+  border: 2px solid #f4f3d9;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.area-gol {
+  position: absolute;
+  top: 25%;
+  width: 16%;
+  height: 50%;
+  border: 2px solid #f4f3d9;
+}
+.area-gol.esquerda { left: -2px; }
+.area-gol.direita { right: -2px; }
+.bola-campo {
+  position: absolute;
+  top: 57%;
+  right: 28%;
+  width: clamp(9px, 1.1vw, 15px);
+  aspect-ratio: 1;
+  border: 2px solid #3a4039;
+  border-radius: 50%;
+  background: radial-gradient(circle, #3a4039 0 25%, #f6f3e3 30%);
+  box-shadow: 1px 2px 1px #263f3480;
+}
+@media (max-width: 720px) {
+  .curio-historia { grid-template-columns: minmax(0, 1fr); }
+  .curio-visual { min-height: 11rem; border-radius: 0 0 5px 5px; }
+  .curio-hardware { height: 11rem; }
+  .campo-futebol { max-width: 13rem; }
+}
+@media (max-width: 380px) {
+  .curio-abas { gap: .1rem; }
+  .curio-abas button { padding-inline: .6rem; font-size: .86rem; }
+}

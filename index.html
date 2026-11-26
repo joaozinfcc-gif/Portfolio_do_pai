@@ -8,7 +8,9 @@
   <title>João Pedro Fonseca · Portfólio</title>
   <link rel="icon" href="imagens/marca.png" type="image/png">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/curiosidades.css">
   <script src="js/navegacao.js" defer></script>
+  <script src="js/curiosidades.js" defer></script>
 </head>
 <body id="inicio">
   <a class="pular" href="#principal">Pular para o conteúdo</a>
@@ -18,7 +20,7 @@
       <nav class="navegacao" aria-label="Navegação principal">
         <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
         <div class="links-menu" id="links-menu">
-          <a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#formacao">Formação</a><a href="#contato">Contato</a>
+          <a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#formacao">Formação</a><a href="#curiosidades">Curiosidades</a><a href="#contato">Contato</a>
         </div>
       </nav>
       <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
@@ -86,6 +88,64 @@
             <li><span>2022</span><div><strong>Operador de Computador</strong><small>Senac Jessé Freire · 196 horas</small></div></li>
           </ol>
         </div>
+      </div>
+    </section>
+    <section class="curiosidades" id="curiosidades" aria-labelledby="titulo-curiosidades">
+      <div class="largura">
+        <h2 id="titulo-curiosidades">Algumas <em>curiosidades.</em></h2>
+
+        <div class="curio-abas" role="tablist" aria-label="Escolha uma curiosidade" hidden>
+          <button type="button" role="tab" id="aba-trabalho" aria-controls="curio-trabalho" aria-selected="true">Meu trabalho</button>
+          <button type="button" role="tab" id="aba-pc" aria-controls="curio-pc" aria-selected="false" tabindex="-1">Meu PC</button>
+          <button type="button" role="tab" id="aba-lazer" aria-controls="curio-lazer" aria-selected="false" tabindex="-1">Tempo livre</button>
+        </div>
+
+        <article class="curio-historia" id="curio-trabalho">
+          <div class="curio-texto">
+            <h3>Como descubro quem ainda precisa pagar a mensalidade?</h3>
+            <p>Uma das perguntas que resolvi na Academia BoaForma foi a que a recepção faria todo mês. Entre os alunos ativos, quem ainda está com a mensalidade em aberto?</p>
+            <p>Minha rotina em SQL recebe o mês e compara os alunos com os pagamentos registrados. Uso <code>NOT IN</code> para deixar de fora quem já pagou. O resultado mostra o aluno, o plano e o valor que falta receber.</p>
+            <a class="link-texto" href="https://github.com/joaozinfcc-gif/Portfolio_do_pai/blob/36e748d1987f7d5db21e0d78c63beb7fe43a8726/projetos/academia-boaforma/03_consultas.sql#L332-L346">Ver a rotina no GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="curio-visual curio-dados">
+            <div class="ficha-consulta">
+              <p>Pendências do mês</p>
+              <ol aria-label="Lógica da consulta de pendências">
+                <li>Selecionar alunos ativos</li>
+                <li>Conferir pagamentos</li>
+                <li>Listar mensalidades em aberto</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="curio-historia" id="curio-pc">
+          <div class="curio-texto">
+            <h3>O que eu confiro antes de montar um PC?</h3>
+            <p>Antes de encaixar a primeira peça, confiro se o processador, a placa-mãe e a memória combinam. No meu setup, o Ryzen 7 7700X divide espaço com 32 GB de memória DDR5 e uma RTX 5060 Ti de 16 GB.</p>
+            <p>É nesse mesmo computador que escrevo código para a faculdade e abro meus jogos quando termino de estudar.</p>
+            <a class="link-texto" href="html/setup.html">Explorar as peças do meu PC <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="curio-visual curio-hardware">
+            <img src="imagens/placa.webp" alt="Ilustração em detalhe da ventoinha e do dissipador de uma placa de vídeo." width="1250" height="833" loading="lazy">
+          </div>
+        </article>
+
+        <article class="curio-historia" id="curio-lazer">
+          <div class="curio-texto">
+            <h3>O que eu faço quando fecho o editor de código?</h3>
+            <p>No futebol, torço pelo Flamengo. No computador, gosto de jogar League of Legends. Prefiro campeões que atacam de longe, e o Brand é um dos que estou aprendendo a jogar.</p>
+            <p>Com ele, parte da graça é escolher onde ficar na luta para acertar as habilidades sem chegar perto demais.</p>
+          </div>
+          <div class="curio-visual curio-futebol" aria-hidden="true">
+            <div class="campo-futebol">
+              <span class="circulo-central"></span>
+              <span class="area-gol esquerda"></span>
+              <span class="area-gol direita"></span>
+              <span class="bola-campo"></span>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   </main>

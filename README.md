@@ -14,7 +14,7 @@ Sou técnico em Informática pelo Senac Jessé Freire e curso Ciência da Comput
 
 | Caminho | Conteúdo |
 | --- | --- |
-| `index.html` | Página inicial, apresentação, projetos, formação e contatos |
+| `index.html` | Página inicial, apresentação, projetos, formação, curiosidades interativas e contatos |
 | `html/` | Páginas individuais dos projetos |
 | `css/` | Estilos e regras de layout para celular e computador |
 | `js/` | Navegação e interações dos projetos |
