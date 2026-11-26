@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de João Pedro Fonseca, estudante de Ciência da Computação em Brasília. Explore projetos de hardware, SQL e revisão espaçada.">
+  <meta name="theme-color" content="#f7f5ee">
+  <title>João Pedro Fonseca · Portfólio</title>
+  <link rel="icon" href="imagens/marca.png" type="image/png">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/navegacao.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="pular" href="#principal">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="largura barra">
+      <a class="marca" href="#inicio" aria-label="João Pedro Fonseca, início">jp<span>.</span></a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
+        <div class="links-menu" id="links-menu">
+          <a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#formacao">Formação</a>
+        </div>
+      </nav>
+      <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
+    </div>
+  </header>
+
+  <main id="principal">
+    <section class="largura capa" aria-labelledby="nome">
+      <div class="apresentacao">
+        <p class="rotulo com-traco">Ciência da Computação</p>
+        <h1 id="nome">João Pedro<br><em>Fonseca<span class="ponto">.</span></em></h1>
+        <p class="introducao">Gosto de entender o que acontece por trás da tela. Aqui abro o gabinete do meu PC, exploro dados com SQL e mostro como organizo meus estudos.</p>
+        <div class="acoes">
+          <a class="botao" href="#projetos">Explorar projetos <span class="seta" aria-hidden="true">↘</span></a>
+          <a class="link-texto" href="#sobre">Sobre mim <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <figure class="foto-capa">
+        <div class="moldura-foto">
+          <img src="imagens/terminal.webp" alt="Ilustração de um computador de tubo com teclado bege sobre um fundo laranja." fetchpriority="high" width="1200" height="900">
+          <i class="canto superior" aria-hidden="true"></i><i class="canto inferior" aria-hidden="true"></i>
+        </div>
+        <figcaption><span class="sinal" aria-hidden="true"></span>Terminal CRT <span class="credito">Ilustração digital</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="projetos" id="projetos" aria-labelledby="titulo-projetos">
+      <div class="largura">
+        <div class="topo-secao">
+          <h2 id="titulo-projetos">Projetos de <em>bancada.</em></h2>
+          <p>Três experiências para testar no navegador.</p>
+        </div>
+        <div class="cartoes">
+          <a class="cartao" href="html/setup.html" aria-labelledby="nome-setup" aria-describedby="resumo-setup">
+            <div class="miniatura mini-hardware" aria-hidden="true"><img src="imagens/placa.webp" alt="" loading="lazy" width="1080" height="720"></div>
+            <div class="corpo-cartao"><span class="categoria">Hardware</span><h3 id="nome-setup">Por dentro do meu PC</h3><p id="resumo-setup">Explore as peças que uso para jogar e estudar.</p><span class="abrir" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="cartao" href="html/estoque.html" aria-labelledby="nome-estoque" aria-describedby="resumo-estoque">
+            <div class="miniatura mini-dados" aria-hidden="true">
+              <div class="mini-esquema"><div class="fio"></div><div class="caixa-tabela tabela-produto"><b>produto</b><span><i>FK</i> categoria_id</span></div><div class="caixa-tabela tabela-categoria"><b>categoria</b><span><i>PK</i> id</span></div></div>
+            </div>
+            <div class="corpo-cartao"><span class="categoria">Banco de dados</span><h3 id="nome-estoque">Consulta de estoque</h3><p id="resumo-estoque">Veja um JOIN unir produtos e categorias de uma loja.</p><span class="abrir" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="cartao" href="html/revisao.html" aria-labelledby="nome-revisao" aria-describedby="resumo-revisao">
+            <div class="miniatura mini-revisao" aria-hidden="true"><div class="folhas"><div class="pagina-cal"><span>REVISÃO</span><strong>D+7</strong></div></div></div>
+            <div class="corpo-cartao"><span class="categoria">Estudos</span><h3 id="nome-revisao">Agenda de revisão</h3><p id="resumo-revisao">Transforme um dia de estudo em três datas de revisão.</p><span class="abrir" aria-hidden="true">↗</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="largura sobre-grade">
+        <div class="sobre-texto">
+          <p class="rotulo com-traco">Minha trajetória</p>
+          <h2 id="titulo-sobre">Sobre <em>mim.</em></h2>
+          <p>Sou do Distrito Federal, técnico em Informática pelo Senac e estudante de Ciência da Computação no UDF. Gosto tanto de montar um PC quanto de descobrir por que um programa se comporta de um jeito inesperado.</p>
+          <p>Como aprendiz na manutenção elétrica do Aeroporto de Brasília, acompanho ordens de serviço e trabalho com planilhas. Na faculdade, quero levar essa experiência com organização de dados para projetos de backend em Java.</p>
+        </div>
+        <div class="formacao" id="formacao">
+          <h3>Formação</h3>
+          <ol class="linha-tempo">
+            <li><span>Atual</span><div><strong>Ciência da Computação</strong><small>Centro Universitário do Distrito Federal (UDF)</small></div></li>
+            <li><span>2024</span><div><strong>Técnico em Informática</strong><small>Senac Jessé Freire · 1.200 horas</small></div></li>
+            <li><span>2022</span><div><strong>Operador de Computador</strong><small>Senac Jessé Freire · 196 horas</small></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="rodape"><div class="largura rodape-interno"><span>João Pedro Fonseca</span><a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>

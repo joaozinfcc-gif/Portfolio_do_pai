@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="Conheça as peças do PC de João Pedro e o que elas fazem.">
+  <title>Por dentro do meu PC · João Pedro Fonseca</title>
+  <link rel="icon" href="../imagens/marca.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/projetos.css">
+  <script src="../js/navegacao.js" defer></script>
+  <script src="../js/setup.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="pular" href="#principal">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="largura barra">
+      <a class="marca" href="../index.html" aria-label="João Pedro Fonseca, início">jp<span>.</span></a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
+        <div class="links-menu" id="links-menu">
+          <a href="../index.html#projetos">Projetos</a><a href="../index.html#sobre">Sobre mim</a><a href="../index.html#formacao">Formação</a>
+        </div>
+      </nav>
+      <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="largura abertura-projeto">
+      <a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Todos os projetos</a>
+      <p class="rotulo com-traco">Hardware</p>
+      <h1>Por dentro do <em>meu PC.</em></h1>
+      <p class="intro-projeto">Uso o mesmo computador para jogar, programar e estudar. Escolha um componente e veja qual trabalho ele faz dentro da máquina.</p>
+    </div>
+    <section class="largura grade-setup area-projeto" aria-label="Explorador de hardware">
+      <figure class="foto-peca"><div><img src="../imagens/placa.webp" alt="Detalhe ilustrativo da ventoinha e do dissipador de uma placa de vídeo." width="1080" height="720"></div><figcaption><span class="sinal" aria-hidden="true"></span>Placa de vídeo <span class="credito">Ilustração digital</span></figcaption></figure>
+      <div class="ficha">
+        <fieldset id="seletor-peca" class="seletor-peca" hidden>
+          <legend>Explore a configuração</legend>
+          <div class="opcoes-peca">
+            <label><input type="radio" name="peca" value="cpu" checked><span>CPU</span></label>
+            <label><input type="radio" name="peca" value="gpu"><span>GPU</span></label>
+            <label><input type="radio" name="peca" value="ram"><span>RAM</span></label>
+            <label><input type="radio" name="peca" value="ssd"><span>SSD</span></label>
+          </div>
+        </fieldset>
+        <div class="fichas-pecas" aria-live="polite">
+          <article class="painel-peca" id="cpu"><p class="rotulo">Processador</p><h2>Ryzen 7 7700X</h2><p>O processador executa as instruções dos programas. Quando compilo um exercício em C, é a CPU que executa o compilador e, depois, o programa que criei.</p></article>
+          <article class="painel-peca" id="gpu"><p class="rotulo">Placa de vídeo</p><h2>RTX 5060 Ti <em>16 GB</em></h2><p>A GPU calcula a imagem dos jogos e a envia para o monitor. Os 16 GB são a memória da própria placa, usada para guardar dados gráficos como texturas.</p></article>
+          <article class="painel-peca" id="ram"><p class="rotulo">Memória de trabalho</p><h2>32 GB <em>DDR5</em></h2><p>São dois módulos de 16 GB. A RAM mantém à mão os dados dos programas abertos, como o editor de código, o navegador e o jogo. Seu conteúdo se perde ao desligar o PC.</p></article>
+          <article class="painel-peca" id="ssd"><p class="rotulo">Armazenamento</p><h2>SSD NVMe <em>1 TB</em></h2><p>É onde ficam meu sistema, meus jogos e meus projetos. Ao salvar um arquivo de código, ele continua disponível no SSD depois que desligo o computador.</p></article>
+        </div>
+      </div>
+    </section>
+    <nav class="largura navegacao-projeto" aria-label="Outros projetos"><a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Ver todos</a><a class="proximo" href="estoque.html"><small>Próximo projeto</small>Consulta de estoque <span aria-hidden="true">→</span></a></nav>
+  </main>
+  <footer class="rodape"><div class="largura rodape-interno"><span>João Pedro Fonseca</span><a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>

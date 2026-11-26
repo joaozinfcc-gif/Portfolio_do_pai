@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="Calcule revisões de 1, 7 e 30 dias para seus estudos.">
+  <title>Agenda de revisão · João Pedro Fonseca</title>
+  <link rel="icon" href="../imagens/marca.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/projetos.css">
+  <script src="../js/navegacao.js" defer></script>
+  <script src="../js/revisao.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="pular" href="#principal">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="largura barra">
+      <a class="marca" href="../index.html" aria-label="João Pedro Fonseca, início">jp<span>.</span></a>
+      <nav class="navegacao" aria-label="Navegação principal">
+        <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
+        <div class="links-menu" id="links-menu">
+          <a href="../index.html#projetos">Projetos</a><a href="../index.html#sobre">Sobre mim</a><a href="../index.html#formacao">Formação</a>
+        </div>
+      </nav>
+      <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
+    </div>
+  </header>
+
+  <main id="principal">
+    <div class="largura abertura-projeto">
+      <a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Todos os projetos</a>
+      <p class="rotulo com-traco">Estudos</p>
+      <h1>Agenda de <em>revisão.</em></h1>
+      <p class="intro-projeto">Quando estudo um assunto, marco três reencontros com ele. Escolha um tema e o dia em que estudou para calcular as revisões de 1, 7 e 30 dias depois.</p>
+    </div>
+    <section class="largura grade-revisao area-projeto" aria-label="Calculadora de revisão espaçada">
+      <form id="form-revisao" class="painel-form" hidden>
+        <h2>Planejar revisões</h2>
+        <div class="campo"><label for="assunto">O que você estudou?</label><input id="assunto" name="assunto" type="text" placeholder="Ex.: JOIN em SQL" required maxlength="100"></div>
+        <div class="campo"><label for="data-estudo">Data do estudo</label><input id="data-estudo" name="data" type="date" required></div>
+        <button class="botao" type="submit">Gerar calendário <span class="seta" aria-hidden="true">→</span></button>
+      </form>
+      <div class="calendario" id="calendario">
+        <h2>Próximas revisões</h2><p id="resumo-plano" role="status">As datas aparecem aqui quando você gerar o calendário.</p>
+        <ol class="datas">
+          <li><span class="dia">D+1</span><div><strong>Relembrar</strong><span class="data-revisao" data-dias="1">1 dia depois do estudo</span></div></li>
+          <li><span class="dia">D+7</span><div><strong>Praticar</strong><span class="data-revisao" data-dias="7">7 dias depois do estudo</span></div></li>
+          <li><span class="dia">D+30</span><div><strong>Testar o que ficou</strong><span class="data-revisao" data-dias="30">30 dias depois do estudo</span></div></li>
+        </ol>
+        <noscript><p>Ative o JavaScript para calcular as datas automaticamente.</p></noscript>
+      </div>
+    </section>
+    <nav class="largura navegacao-projeto" aria-label="Outros projetos"><a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Ver todos</a><a class="proximo" href="setup.html"><small>Próximo projeto</small>Por dentro do meu PC <span aria-hidden="true">→</span></a></nav>
+  </main>
+  <footer class="rodape"><div class="largura rodape-interno"><span>João Pedro Fonseca</span><a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Estrutura comum às páginas de cada projeto. */
+.abertura-projeto { padding-block: clamp(28px, 3.2vw, 52px) 2rem; }
+.voltar { display: inline-flex; gap: .55rem; align-items: center; min-height: 42px; color: var(--texto); font-size: .9rem; }
+.abertura-projeto .rotulo { margin: clamp(20px, 2.7vw, 44px) 0 .8rem; }
+.abertura-projeto h1 { font-size: clamp(3.5rem, 6.3vw, 6.7rem); line-height: .98; }
+.intro-projeto { max-width: 71ch; color: var(--texto); font-size: clamp(1rem, 1.25vw, 1.17rem); margin-top: 1.05rem; }
+.area-projeto { margin-bottom: clamp(40px,6vw,85px); }
+.area-projeto h2 { font-size: clamp(1.5rem, 2.3vw, 2.25rem); letter-spacing: -.05em; }
+.navegacao-projeto { border-top: 1px solid var(--linha); padding-block: 1.3rem 1.7rem; display: flex; align-items: center; justify-content: space-between; gap: .8rem; }
+.proximo { text-align: right; font-weight: 650; }
+.proximo:hover { text-decoration: underline; text-underline-offset: .2em; }
+.proximo small { display: block; color: var(--texto); font-size: .75rem; font-weight: 450; }
+.proximo span { margin-left: .25rem; }
+.grade-setup, .grade-revisao, .grade-estoque { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: clamp(20px,2.5vw,40px); }
+.foto-peca > div { aspect-ratio: 1.65; border-radius: 5px; overflow: hidden; background: #382a25; }
+.ficha { padding: 0; }
+.seletor-peca { padding: 0; margin: 0 0 1.1rem; border: 0; min-inline-size: 0; }
+.seletor-peca legend, .campo label { font-size: .9rem; font-weight: 650; }
+.seletor-peca legend { padding: 0; margin-bottom: .52rem; }
+.opcoes-peca { display: flex; gap: .45rem; flex-wrap: wrap; }
+.opcoes-peca label { cursor: pointer; position: relative; }
+.opcoes-peca input { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); }
+.opcoes-peca label span { display: inline-grid; place-items: center; min-width: 3.5rem; min-height: 42px; padding: .45rem .7rem; border: 1px solid #bcbbae; border-radius: 3px; font: 650 .82rem var(--mono); }
+.opcoes-peca input:checked + span { color: var(--papel); background: var(--tinta); border-color: var(--tinta); }
+.opcoes-peca input:focus-visible + span { outline: 3px solid #196a87; outline-offset: 2px; }
+.painel-peca { min-height: 190px; padding: clamp(20px,2.5vw,36px); border-left: 4px solid var(--laranja); background: var(--papel-forte); border-radius: 3px; }
+.painel-peca + .painel-peca:not([hidden]) { margin-top: .6rem; }
+.fichas-pecas:has(.painel-peca[hidden]) .painel-peca { margin-top: 0; }
+.painel-peca .rotulo { color: #685f52; }
+.painel-peca h2 { margin: .5rem 0 .9rem; }
+.painel-peca > p:last-child { color: var(--texto); max-width: 58ch; }
+.campo { display: grid; gap: .4rem; }
+.campo input, .campo select { max-width: 100%; min-width: 0; width: 100%; min-height: 46px; padding: .6rem .75rem; border: 1px solid #999b8c; border-radius: 3px; background: #fffdf6; color: var(--tinta); }
+.filtros { display: flex; align-items: flex-end; flex-wrap: wrap; gap: .75rem 1.7rem; margin-bottom: 1.35rem; }
+.filtros .campo { width: min(100%, 17rem); }
+.caixa-selecao { display: inline-flex; align-items: center; gap: .5rem; min-height: 46px; font-size: .9rem; cursor: pointer; }
+.caixa-selecao input { width: 1.1rem; height: 1.1rem; accent-color: var(--tinta); }
+.grade-estoque { grid-template-columns: minmax(0,.92fr) minmax(0,1.08fr); gap: 1.25rem; align-items: start; }
+.editor { overflow: hidden; border-radius: 4px; background: #292835; color: #eeeaf7; }
+.barra-editor { color: #dcd8ec; border-bottom: 1px solid #504c60; display: flex; align-items: center; gap: .8rem; padding: .75rem 1rem; font: .76rem var(--mono); }
+.luzes { width: 7px; height: 7px; background: #fd926d; border-radius: 50%; margin-right: 22px; box-shadow: 10px 0 #d1b476, 20px 0 #aab795; }
+.editor pre { margin: 0; padding: clamp(17px,2.1vw,30px); white-space: pre-wrap; overflow-wrap: anywhere; font: .86rem/1.8 var(--mono); }
+.editor code { font: inherit; }
+.resultado-estoque { padding: 1.25rem; background: #efedf6; border: 1px solid #cecbd6; border-radius: 4px; }
+.titulo-resultado { display: flex; justify-content: space-between; gap: .75rem; align-items: baseline; }
+.titulo-resultado p { font: .74rem var(--mono); color: #555263; }
+.resultado-estoque table { margin-top: .5rem; width: 100%; border-collapse: collapse; table-layout: fixed; text-align: left; font-size: .88rem; }
+.resultado-estoque caption { text-align: left; padding-bottom: .8rem; font-size: .82rem; color: #555263; }
+.resultado-estoque td, .resultado-estoque th { border-top: 1px solid #cac7d2; padding: .58rem .35rem .58rem 0; overflow-wrap: anywhere; }
+.resultado-estoque th { font-weight: 650; }
+.resultado-estoque th:first-child { width: 47%; }
+.resultado-estoque .quantidade { width: 13%; padding-right: 0; text-align: right; font-variant-numeric: tabular-nums; }
+.grade-revisao { grid-template-columns: minmax(0,.85fr) minmax(0,1.15fr); align-items: stretch; }
+.painel-form, .calendario { border: 1px solid var(--linha); border-radius: 5px; padding: clamp(20px, 2.5vw, 36px); }
+.painel-form { background: var(--papel-forte); }
+.painel-form .campo { margin-top: 1.15rem; }
+.painel-form .botao { margin-top: 1.3rem; }
+.calendario { background: #dce8dc; border-color: #b7c9b7; }
+.calendario > p { color: #435343; margin-top: .55rem; overflow-wrap: anywhere; }
+.datas { list-style: none; padding: 0; margin: 1rem 0 0; }
+.datas li { display: flex; align-items: center; gap: 1rem; border-top: 1px solid #b1c3b1; padding: .72rem 0; }
+.datas li:last-child { padding-bottom: 0; }
+.dia { min-width: 3.2rem; color: #273a2b; font: italic 400 1.75rem/1 var(--serifa); }
+.datas strong, .data-revisao { display: block; }
+.datas strong { font-size: .94rem; font-weight: 650; }
+.data-revisao { font-size: .87rem; color: #435343; }
+@media (max-width: 760px) {
+  .grade-setup, .grade-revisao, .grade-estoque { grid-template-columns: 1fr; }
+  .abertura-projeto { padding-top: 1rem; }
+  .abertura-projeto h1 { font-size: clamp(3.1rem,10vw,4.7rem); }
+  .grade-setup .foto-peca > div { aspect-ratio: 2.05; }
+  .area-projeto { margin-bottom: 2.5rem; }
+  .painel-peca { min-height: auto; }
+  .resultado-estoque { padding: 1rem; }
+}
