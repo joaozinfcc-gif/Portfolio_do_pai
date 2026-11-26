@@ -1,29 +1,19 @@
-# Portfolio_do_pai
-Portfólio de João Pedro Fonseca, estudante de Ciência da Computação no UDF. Explore as peças do meu PC, consulte o estoque de uma loja de informática e planeje suas revisões. Projeto final de Front-end desenvolvido com HTML, CSS e JavaScript, com layout responsivo para celular e computador.
+# Portfólio — João Pedro Fonseca
+Técnico em Informática pelo Senac e graduando em Ciência da Computação no UDF. Experiência em montagem de computadores e redes; interesse em desenvolvimento backend com Java, bancos de dados e infraestrutura.
 
 [Abrir o portfólio no GitHub Pages](https://joaozinfcc-gif.github.io/Portfolio_do_pai/)
 
-## Abrir no computador
+## Projetos
+- [Por dentro do meu PC](html/setup.html): explorador interativo de hardware.
+- [Academia BoaForma](projetos/academia-boaforma/): projeto acadêmico de banco relacional em MySQL, com 11 tabelas, 26 consultas demonstrativas, 2 triggers e 3 procedures. [Página do projeto](html/academia.html).
+- [Laboratório de redes](html/redes.html): simulador didático de diagnóstico IP, DHCP, gateway e DNS, sem execução real de comandos.
+- [Consulta de estoque](html/estoque.html): demonstração complementar de JOIN em JavaScript.
 
-No repositório, abra **Code → Download ZIP**, extraia o arquivo e dê dois cliques em `index.html`. HTML, estilos, scripts, imagens e fontes acompanham o projeto. Também dá para abrir a pasta no VS Code e editar os arquivos.
+## Executar localmente
+Baixe o repositório (Code → Download ZIP), extraia e abra index.html. O site é estático e responsivo, feito com HTML, CSS e JavaScript. Os scripts SQL são independentes e devem ser executados no MySQL de testes, conforme o README do projeto.
 
-## O que mostrar na apresentação
+## Foto
+O arquivo imagens/perfil.svg é um monograma provisório. Para usar uma fotografia, adicione a imagem em imagens/ e atualize o src e o alt da imagem de capa no index.html. O e-mail de contato ainda precisa do endereço completo.
 
-| Página | Experimente | Onde está o JavaScript |
-| --- | --- | --- |
-| Por dentro do meu PC | Selecione GPU para ver a RTX 5060 Ti e a função da memória de vídeo. | `js/setup.js` ouve a mudança do botão de opção e exibe a ficha selecionada. |
-| Consulta de estoque | Escolha Armazenamento e marque “Somente produtos disponíveis”. O resultado fica vazio porque o SSD tem quantidade zero. Desmarque a opção para fazê-lo reaparecer. | `js/estoque.js` relaciona produtos e categorias pelo ID, filtra o conjunto e atualiza a tabela e a consulta SQL equivalente. Os dados são fictícios. |
-| Agenda de revisão | Informe um assunto e a data de estudo. Por exemplo, 25/11/2026 gera 26/11, 02/12 e 25/12. | `js/revisao.js` lê o formulário, soma 1, 7 e 30 dias à data inicial e escreve os resultados na página. |
-
-No celular, abra o menu e entre em **Projetos**. A grade passa de três colunas para uma. Os estilos responsáveis estão em `css/estilos.css` e `css/projetos.css`.
-
-## Estrutura dos arquivos
-
-| Caminho | Conteúdo |
-| --- | --- |
-| `index.html` | Página inicial e entrada do GitHub Pages |
-| `html/` | Páginas de hardware, banco de dados e revisão |
-| `css/` | Estilos, tipografia e regras de responsividade |
-| `js/` | Navegação mobile e interações de cada projeto |
-| `imagens/` | Imagens ilustrativas e ícone do portfólio |
-| `fontes/` | Fontes locais DM Sans e Instrument Serif com as respectivas licenças |
+## Contatos
+[GitHub](https://github.com/joaozinfcc-gif) · [Instagram](https://www.instagram.com/jpedro1090/) · [WhatsApp](https://wa.me/5561996452196)

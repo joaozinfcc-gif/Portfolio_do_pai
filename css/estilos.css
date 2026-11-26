@@ -166,3 +166,9 @@ h1 em, h2 em { font-family: var(--serifa); letter-spacing: -.045em; font-weight:
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
 }
+
+/* Perfil e contatos */
+.habilidades,.contatos{display:flex;flex-wrap:wrap;align-items:center;gap:.65rem}
+.habilidades{margin-top:1.2rem}.habilidades span{border:1px solid #646a5d;padding:.35rem .65rem;border-radius:3px;font-size:.78rem;color:#e5e8df}
+.rodape-interno{flex-wrap:wrap;gap:.8rem 1.5rem}.assinatura strong,.assinatura small{display:block}.assinatura strong{color:var(--tinta);font-size:1rem}.assinatura small{margin-top:.2rem}.contatos{gap:.6rem 1.1rem}.contatos svg{width:19px;height:19px;flex:none}.contato-pendente{display:inline-flex;align-items:center;gap:.55rem;color:#6a6b61}.topo-link{font-size:1.3rem}.mini-redes{background:radial-gradient(#638c7855 1px,transparent 1px) 0 0/12px 12px,#c4d8c9;display:flex;flex-direction:column;justify-content:center;gap:1rem}.rede-mini{display:flex;align-items:center;justify-content:center;width:90%}.rede-mini span{border:1px solid #365346;padding:.6rem .4rem;background:#f5f7eb;border-radius:3px;font:700 clamp(.55rem,1vw,.8rem) var(--mono);box-shadow:3px 4px #6b927b}.rede-mini i{width:9%;height:2px;background:#365346}.mini-redes small{font:.75rem var(--mono);color:#365346}
+@media(max-width:720px){.rodape-interno{align-items:flex-start}.contatos{width:100%;gap:.4rem 1rem}.topo-link{margin-left:auto}}

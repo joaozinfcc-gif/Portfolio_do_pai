@@ -73,3 +73,5 @@
   .painel-peca { min-height: auto; }
   .resultado-estoque { padding: 1rem; }
 }
+
+.detalhe-projeto{display:grid;gap:1.7rem}.detalhe-projeto h2{margin-bottom:.65rem}.detalhe-projeto p{color:var(--texto);max-width:75ch}.metricas{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.75rem}.metrica{padding:1.1rem;border:1px solid var(--linha);background:var(--papel-forte);border-radius:5px}.metrica strong{display:block;font-size:2.1rem;line-height:1.1}.metrica span{font-size:.84rem;color:var(--texto)}.arquivos{display:grid;gap:.65rem}.arquivos a{display:flex;align-items:center;justify-content:space-between;gap:.7rem;border:1px solid var(--linha);padding:.85rem 1rem;border-radius:4px;font-weight:600;overflow-wrap:anywhere}.arquivos a:hover{background:var(--papel-forte)}.lista-tecnica{padding-left:1.2rem;color:var(--texto)}.lab-output{min-height:14rem}.lab-output pre{min-height:9rem}.lab-nota{margin-top:1rem;font-size:.9rem}.lab-diagnostico{padding:1rem;background:#dce8dc;color:#273a2b;border-radius:4px;margin-top:.75rem}
