@@ -18,7 +18,7 @@
       <nav class="navegacao" aria-label="Navegação principal">
         <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
         <div class="links-menu" id="links-menu">
-          <a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#formacao">Formação</a>
+          <a href="#projetos">Projetos</a><a href="#sobre">Sobre mim</a><a href="#formacao">Formação</a><a href="#contato">Contato</a>
         </div>
       </nav>
       <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
@@ -30,18 +30,18 @@
       <div class="apresentacao">
         <p class="rotulo com-traco">Ciência da Computação</p>
         <h1 id="nome">João Pedro<br><em>Fonseca<span class="ponto">.</span></em></h1>
-        <p class="introducao">Gosto de entender o que acontece por trás da tela. Tenho experiência em montagem de computadores e redes, desenvolvo projetos com SQL e direciono minha formação para desenvolvimento backend e infraestrutura.</p>
+        <p class="introducao">Gosto de entender o que acontece por trás da tela. Tenho experiência em montagem de PCs e redes. Curso Ciência da Computação no UDF e quero trabalhar com desenvolvimento backend, unindo Java e SQL.</p>
         <div class="acoes">
-          <a class="botao" href="#projetos">Explorar projetos <span class="seta" aria-hidden="true">↘</span></a>
-          <a class="link-texto" href="#sobre">Sobre mim <span aria-hidden="true">↓</span></a>
+          <a class="botao" href="html/academia.html">Conhecer o projeto SQL <span class="seta" aria-hidden="true">↗</span></a>
+          <a class="link-texto" href="#projetos">Todos os projetos <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <figure class="foto-capa">
-        <div class="moldura-foto">
-          <img src="imagens/perfil.svg" alt="Monograma provisório JP de João Pedro Fonseca" fetchpriority="high" width="1200" height="900">
+      <figure class="foto-capa retrato">
+        <div class="moldura-foto moldura-retrato">
+          <img src="imagens/joao-pedro.webp" width="400" height="400" fetchpriority="high" alt="Retrato ilustrado de João Pedro com óculos escuros, diante de monitores e de um céu em tons de roxo.">
           <i class="canto superior" aria-hidden="true"></i><i class="canto inferior" aria-hidden="true"></i>
         </div>
-        <figcaption><span class="sinal" aria-hidden="true"></span>João Pedro Fonseca <span class="credito">Portfólio pessoal</span></figcaption>
+        <figcaption><span class="sinal" aria-hidden="true"></span>João Pedro Fonseca <span class="credito">Retrato ilustrado</span></figcaption>
       </figure>
     </section>
 
@@ -49,20 +49,23 @@
       <div class="largura">
         <div class="topo-secao">
           <h2 id="titulo-projetos">Projetos em <em>destaque.</em></h2>
-          <p>Hardware, banco de dados e redes na prática.</p>
+          <p>Banco de dados, redes e hardware na prática.</p>
         </div>
         <div class="cartoes">
-          <a class="cartao" href="html/setup.html" aria-labelledby="nome-setup" aria-describedby="resumo-setup">
-            <div class="miniatura mini-hardware" aria-hidden="true"><img src="imagens/placa.webp" alt="" loading="lazy" width="1080" height="720"></div>
-            <div class="corpo-cartao"><span class="categoria">Hardware</span><h3 id="nome-setup">Por dentro do meu PC</h3><p id="resumo-setup">Explore as peças que uso para jogar e estudar.</p><span class="abrir" aria-hidden="true">↗</span></div>
-          </a>
-          <a class="cartao" href="html/academia.html" aria-labelledby="nome-estoque" aria-describedby="resumo-estoque">
+          <a class="cartao" href="html/academia.html" aria-labelledby="nome-sql" aria-describedby="resumo-sql">
             <div class="miniatura mini-dados" aria-hidden="true">
               <div class="mini-esquema"><div class="fio"></div><div class="caixa-tabela tabela-produto"><b>aluno</b><span><i>FK</i> id_plano</span></div><div class="caixa-tabela tabela-categoria"><b>plano</b><span><i>PK</i> id_plano</span></div></div>
             </div>
-            <div class="corpo-cartao"><span class="categoria">Banco de dados</span><h3 id="nome-estoque">Academia BoaForma</h3><p id="resumo-estoque">Banco relacional em MySQL: 11 tabelas, consultas, triggers e procedures.</p><span class="abrir" aria-hidden="true">↗</span></div>
+            <div class="corpo-cartao"><span class="categoria">Banco de dados · MySQL</span><h3 id="nome-sql">Academia BoaForma</h3><p id="resumo-sql">Como um banco controla matrículas, pagamentos e a última vaga de uma turma.</p><span class="abrir" aria-hidden="true">↗</span></div>
           </a>
-          <a class="cartao" href="html/redes.html" aria-labelledby="nome-redes" aria-describedby="resumo-redes"><div class="miniatura mini-redes" aria-hidden="true"><div class="rede-mini"><span>PC</span><i></i><span>ROTEADOR</span><i></i><span>DNS</span></div><small>192.168.1.0/24</small></div><div class="corpo-cartao"><span class="categoria">Redes e suporte</span><h3 id="nome-redes">Laboratório de redes</h3><p id="resumo-redes">Simule diagnósticos de DHCP, gateway, ping e DNS.</p><span class="abrir" aria-hidden="true">↗</span></div></a>
+          <a class="cartao" href="html/redes.html" aria-labelledby="nome-redes" aria-describedby="resumo-redes">
+            <div class="miniatura mini-redes" aria-hidden="true"><div class="rede-mini"><span>PC</span><i></i><span>ROTEADOR</span><i></i><span>DNS</span></div><small>192.168.1.0/24</small></div>
+            <div class="corpo-cartao"><span class="categoria">Redes · Suporte</span><h3 id="nome-redes">Laboratório de redes</h3><p id="resumo-redes">Investigue quatro chamados de conectividade a partir dos sintomas e das saídas do terminal.</p><span class="abrir" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="cartao" href="html/setup.html" aria-labelledby="nome-setup" aria-describedby="resumo-setup">
+            <div class="miniatura mini-hardware" aria-hidden="true"><img src="imagens/placa.webp" alt="" loading="lazy" width="1080" height="720"></div>
+            <div class="corpo-cartao"><span class="categoria">Hardware</span><h3 id="nome-setup">Por dentro do meu PC</h3><p id="resumo-setup">Conheça as peças do meu computador e a função de cada uma nos jogos e nos estudos.</p><span class="abrir" aria-hidden="true">↗</span></div>
+          </a>
         </div>
       </div>
     </section>
@@ -72,9 +75,9 @@
         <div class="sobre-texto">
           <p class="rotulo com-traco">Minha trajetória</p>
           <h2 id="titulo-sobre">Sobre <em>mim.</em></h2>
-          <p>Tenho 22 anos, sou do Distrito Federal, técnico em Informática pelo Senac e graduando em Ciência da Computação no UDF. Tenho experiência em montagem e configuração de computadores e conhecimentos práticos em redes, diagnóstico e suporte técnico.</p>
-          <p>Durante minha graduação, desenvolvi interesse por modelagem de dados e SQL, aplicando conceitos de bancos relacionais em projetos acadêmicos. Também venho desenvolvendo habilidades em HTML, CSS, JavaScript e programação. Meu objetivo é aprofundar meus conhecimentos em backend com Java, banco de dados, segurança e infraestrutura em nuvem, construindo soluções funcionais, organizadas e eficientes.</p>
-        <div class="habilidades" aria-label="Áreas de interesse"><span>Hardware</span><span>Redes</span><span>SQL / MySQL</span><span>Java (em formação)</span><span>HTML / CSS / JS</span></div></div>
+          <p>Tenho 22 anos, moro no Distrito Federal e me formei como técnico em Informática pelo Senac Jessé Freire. Na montagem de PCs, gosto de entender como as peças trabalham juntas. Em redes, meu interesse está em descobrir onde começa uma falha de conexão.</p>
+          <p>Na faculdade, esse interesse em investigar problemas me levou aos bancos de dados. No projeto da Academia BoaForma, modelei as relações entre alunos e turmas e usei uma trigger do MySQL para impedir inscrições quando as vagas acabam. Quero levar essa experiência para o desenvolvimento de aplicações backend com Java.</p>
+          <div class="habilidades" aria-label="Áreas de interesse"><span>Hardware</span><span>Redes</span><span>SQL / MySQL</span><span>Java (em formação)</span><span>HTML / CSS / JS</span></div></div>
         <div class="formacao" id="formacao">
           <h3>Formação</h3>
           <ol class="linha-tempo">
@@ -86,6 +89,29 @@
       </div>
     </section>
   </main>
-  <footer class="rodape" id="contato"><div class="largura rodape-interno"><div class="assinatura"><strong>João Pedro Fonseca</strong><small>Ciência da Computação · Brasília, DF</small></div><nav class="contatos" aria-label="Contatos"><a href="https://github.com/joaozinfcc-gif"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.4 4.4 0 0 0-.1-3.3s-1-.3-3.4 1.3a12 12 0 0 0-6 0C6.5 2.7 5.5 3 5.5 3a4.4 4.4 0 0 0-.1 3.3A4.7 4.7 0 0 0 4.1 9.6c0 4.7 2.8 5.7 5.5 6A3 3 0 0 0 9 18v3.3"/></svg> GitHub</a><a href="https://www.instagram.com/jpedro1090/"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a><a href="https://wa.me/5561996452196"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.7A8.5 8.5 0 0 1 8 19.3L3 21l1.6-5A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8 8c.3 3.9 3 6.6 6.8 7l1-1.8-2.3-1-1 1c-1.7-.8-2.5-1.7-3.1-3.2l.8-1L9.2 7 8 8Z"/></svg> WhatsApp</a><span class="contato-pendente" title="Endereço completo ainda não confirmado"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> E-mail a confirmar</span></nav><a href="#inicio" class="topo-link" aria-label="Voltar ao início">↑</a></div></footer>
+  <footer class="rodape" id="contato">
+    <div class="largura rodape-interno">
+      <div class="assinatura"><strong>João Pedro Fonseca</strong><small>Ciência da Computação · Brasília, DF</small></div>
+      <nav class="contatos" aria-label="Contatos de João Pedro">
+          <a href="https://github.com/joaozinfcc-gif">
+            <img src="imagens/icones/github.svg" alt="" width="20" height="20">
+            <span><small>GitHub</small><strong>joaozinfcc-gif</strong></span>
+          </a>
+          <a href="https://www.instagram.com/jpedro1090/">
+            <img src="imagens/icones/instagram.svg" alt="" width="20" height="20">
+            <span><small>Instagram</small><strong>@jpedro1090</strong></span>
+          </a>
+          <a href="https://wa.me/5561996452196">
+            <img src="imagens/icones/whatsapp.svg" alt="" width="20" height="20">
+            <span><small>WhatsApp</small><strong>(61) 99645-2196</strong></span>
+          </a>
+          <a href="mailto:jpefcc@gmail.com">
+            <img src="imagens/icones/email.svg" alt="" width="20" height="20">
+            <span><small>E-mail</small><strong>jpefcc@gmail.com</strong></span>
+          </a>
+      </nav>
+      <a href="#inicio" class="topo-link" aria-label="Voltar ao início">↑</a>
+    </div>
+  </footer>
 </body>
 </html>

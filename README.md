@@ -1,19 +1,33 @@
-# Portfólio — João Pedro Fonseca
-Técnico em Informática pelo Senac e graduando em Ciência da Computação no UDF. Experiência em montagem de computadores e redes; interesse em desenvolvimento backend com Java, bancos de dados e infraestrutura.
+# Portfólio de João Pedro Fonseca
+
+Sou técnico em Informática pelo Senac Jessé Freire e curso Ciência da Computação no UDF. Tenho experiência em montagem de PCs e redes. Quero trabalhar com desenvolvimento backend usando Java e bancos de dados relacionais.
 
 [Abrir o portfólio no GitHub Pages](https://joaozinfcc-gif.github.io/Portfolio_do_pai/)
 
 ## Projetos
-- [Por dentro do meu PC](html/setup.html): explorador interativo de hardware.
-- [Academia BoaForma](projetos/academia-boaforma/): projeto acadêmico de banco relacional em MySQL, com 11 tabelas, 26 consultas demonstrativas, 2 triggers e 3 procedures. [Página do projeto](html/academia.html).
-- [Laboratório de redes](html/redes.html): simulador didático de diagnóstico IP, DHCP, gateway e DNS, sem execução real de comandos.
-- [Consulta de estoque](html/estoque.html): demonstração complementar de JOIN em JavaScript.
 
-## Executar localmente
-Baixe o repositório (Code → Download ZIP), extraia e abra index.html. O site é estático e responsivo, feito com HTML, CSS e JavaScript. Os scripts SQL são independentes e devem ser executados no MySQL de testes, conforme o README do projeto.
+- **Academia BoaForma.** Modelei em MySQL os planos, as matrículas, as turmas e os pagamentos de uma academia. A página permite comparar o SQL com os resultados e acompanhar o que acontece quando uma quarta pessoa tenta entrar em uma turma de três vagas. [Ver a página](https://joaozinfcc-gif.github.io/Portfolio_do_pai/html/academia.html) · [Abrir os arquivos SQL](projetos/academia-boaforma/)
+- **Laboratório de redes.** Quatro chamados simulados para investigar DHCP, gateway, acesso por IP e DNS. [Testar o laboratório](https://joaozinfcc-gif.github.io/Portfolio_do_pai/html/redes.html)
+- **Por dentro do meu PC.** Um explorador das peças do meu computador, com a função de cada componente. [Explorar o hardware](https://joaozinfcc-gif.github.io/Portfolio_do_pai/html/setup.html)
 
-## Foto
-O arquivo imagens/perfil.svg é um monograma provisório. Para usar uma fotografia, adicione a imagem em imagens/ e atualize o src e o alt da imagem de capa no index.html. O e-mail de contato ainda precisa do endereço completo.
+## Estrutura
 
-## Contatos
-[GitHub](https://github.com/joaozinfcc-gif) · [Instagram](https://www.instagram.com/jpedro1090/) · [WhatsApp](https://wa.me/5561996452196)
+| Caminho | Conteúdo |
+| --- | --- |
+| `index.html` | Página inicial, apresentação, projetos, formação e contatos |
+| `html/` | Páginas individuais dos projetos |
+| `css/` | Estilos e regras de layout para celular e computador |
+| `js/` | Navegação e interações dos projetos |
+| `imagens/` | Retrato ilustrado, imagens de hardware e ícones dos contatos |
+| `fontes/` | Fontes locais e suas licenças |
+| `projetos/academia-boaforma/` | Scripts MySQL e referência da disciplina |
+
+## Abrir localmente
+
+Baixe e extraia o repositório e abra `index.html` no navegador. As páginas funcionam sem instalar dependências. Para reproduzir as consultas no MySQL, siga as instruções na pasta da Academia BoaForma.
+
+O GitHub Pages publica o conteúdo da raiz da branch `gh-pages`.
+
+## Contato
+
+[GitHub](https://github.com/joaozinfcc-gif) · [Instagram](https://www.instagram.com/jpedro1090/) · [WhatsApp](https://wa.me/5561996452196) · [E-mail](mailto:jpefcc@gmail.com)

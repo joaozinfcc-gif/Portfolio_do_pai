@@ -1,13 +1,113 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f5ee"><meta name="description" content="Uma simulação didática de suporte técnico. Escolha um cenário, execute o diagnóstico e acompanhe a interpretação dos comandos de rede."><title>Laboratório de redes · João Pedro Fonseca</title><link rel="icon" href="../imagens/marca.png"><link rel="stylesheet" href="../css/estilos.css"><link rel="stylesheet" href="../css/projetos.css"><script src="../js/navegacao.js" defer></script><script src="../js/redes.js" defer></script></head><body id="inicio"><a class="pular" href="#principal">Pular para o conteúdo</a><header class="cabecalho">
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ee">
+  <meta name="description" content="Um computador acessa o gateway, mas não abre sites pelo nome. Por onde começar? Neste laboratório, você pode comparar esse caso com outros três chamados e interpretar os resultados de cada teste.">
+  <title>Laboratório de redes · João Pedro Fonseca</title>
+  <link rel="icon" href="../imagens/marca.png" type="image/png">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/projetos.css">
+  <script src="../js/navegacao.js" defer></script>
+  <script src="../js/redes.js" defer></script>
+</head>
+<body id="inicio">
+  <a class="pular" href="#principal">Pular para o conteúdo</a>
+  <header class="cabecalho">
     <div class="largura barra">
       <a class="marca" href="../index.html" aria-label="João Pedro Fonseca, início">jp<span>.</span></a>
       <nav class="navegacao" aria-label="Navegação principal">
         <button type="button" class="botao-menu" aria-expanded="false" aria-controls="links-menu" hidden>Menu <span class="tracos" aria-hidden="true"></span></button>
         <div class="links-menu" id="links-menu">
-          <a href="../index.html#projetos">Projetos</a><a href="../index.html#sobre">Sobre mim</a><a href="../index.html#formacao">Formação</a>
+          <a href="../index.html#projetos">Projetos</a><a href="../index.html#sobre">Sobre mim</a><a href="../index.html#formacao">Formação</a><a href="#contato">Contato</a>
         </div>
       </nav>
       <span class="local"><span class="pino" aria-hidden="true"></span>Brasília, DF</span>
     </div>
-  </header><main id="principal"><div class="largura abertura-projeto"><a class="voltar" href="../index.html#projetos">← Todos os projetos</a><p class="rotulo com-traco">Redes · Infraestrutura</p><h1>Diagnóstico de <em>redes.</em></h1><p class="intro-projeto">Uma simulação didática de suporte técnico. Escolha um cenário, execute o diagnóstico e acompanhe a interpretação dos comandos de rede.</p></div><section class="largura area-projeto detalhe-projeto"><div class="grade-revisao"><form class="painel-form" id="lab-form"><h2>Cenário de atendimento</h2><div class="campo"><label for="cenario">Sintoma relatado</label><select id="cenario"><option value="dhcp">Computador não recebe IP válido</option><option value="gateway">Sem acesso à internet</option><option value="dns">Sites não abrem pelo nome</option><option value="ok">Conexão normal</option></select></div><button class="botao" type="submit">Executar diagnóstico <span aria-hidden="true">→</span></button><p class="lab-nota">Rede fictícia 192.168.1.0/24. Nenhum comando é executado no seu computador.</p></form><div><div class="editor lab-output"><div class="barra-editor"><span class="luzes"></span>terminal · simulação</div><pre><code id="saida">Selecione um cenário e execute o diagnóstico.</code></pre></div><div class="lab-diagnostico" id="diagnostico" role="status">O diagnóstico aparecerá aqui.</div></div></div><div><h2>O que cada teste verifica</h2><ul class="lista-tecnica"><li><strong>ipconfig:</strong> configuração de IP, máscara e gateway.</li><li><strong>ping:</strong> verifica respostas ICMP, quando permitidas.</li><li><strong>nslookup:</strong> consulta a resolução DNS.</li><li><strong>DHCP:</strong> fornece parâmetros de rede automaticamente.</li></ul><p>Em um atendimento real, a ausência de resposta ao ping, isoladamente, não comprova que um equipamento está desligado.</p></div></section><nav class="largura navegacao-projeto" aria-label="Outros projetos"><a class="voltar" href="../index.html#projetos">← Ver todos</a><a class="proximo" href="setup.html"><small>Próximo projeto</small>Por dentro do meu PC →</a></nav></main><footer class="rodape" id="contato"><div class="largura rodape-interno"><div class="assinatura"><strong>João Pedro Fonseca</strong><small>Ciência da Computação · Brasília, DF</small></div><nav class="contatos" aria-label="Contatos"><a href="https://github.com/joaozinfcc-gif"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7m12 5v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3 4.4 4.4 0 0 0-.1-3.3s-1-.3-3.4 1.3a12 12 0 0 0-6 0C6.5 2.7 5.5 3 5.5 3a4.4 4.4 0 0 0-.1 3.3A4.7 4.7 0 0 0 4.1 9.6c0 4.7 2.8 5.7 5.5 6A3 3 0 0 0 9 18v3.3"/></svg> GitHub</a><a href="https://www.instagram.com/jpedro1090/"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg> Instagram</a><a href="https://wa.me/5561996452196"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.7A8.5 8.5 0 0 1 8 19.3L3 21l1.6-5A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8 8c.3 3.9 3 6.6 6.8 7l1-1.8-2.3-1-1 1c-1.7-.8-2.5-1.7-3.1-3.2l.8-1L9.2 7 8 8Z"/></svg> WhatsApp</a><span class="contato-pendente" title="Endereço completo ainda não confirmado"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> E-mail a confirmar</span></nav><a href="#inicio" class="topo-link" aria-label="Voltar ao início">↑</a></div></footer></body></html>
+  </header>
+
+  <main id="principal">
+    <div class="largura abertura-projeto">
+      <a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Todos os projetos</a>
+      <p class="rotulo com-traco">Redes de computadores</p>
+      <h1>Laboratório de <em>redes.</em></h1>
+      <p class="intro-projeto">Um computador acessa o gateway, mas não abre sites pelo nome. Por onde começar? Neste laboratório, você pode comparar esse caso com outros três chamados e interpretar os resultados de cada teste.</p>
+    </div>
+    <div class="largura area-projeto detalhe-projeto">
+      <section class="grade-lab" aria-labelledby="titulo-cenario">
+        <form class="painel-form" id="lab-form">
+          <h2 id="titulo-cenario">Escolha um chamado</h2>
+          <div class="campo">
+            <label for="cenario">O que a pessoa relatou?</label>
+            <select id="cenario" name="cenario">
+              <option value="dns" selected>Os sites não abrem pelo nome</option>
+              <option value="dhcp">O computador ficou sem um IP da rede</option>
+              <option value="gateway">O Wi-Fi conecta, mas a internet não abre</option>
+              <option value="ok">A conexão está funcionando normalmente</option>
+            </select>
+          </div>
+          <button class="botao" type="submit">Simular atendimento <span class="seta" aria-hidden="true">→</span></button>
+          <p class="lab-nota">Os comandos e endereços fazem parte de uma rede fictícia. A simulação roda no navegador.</p>
+          <noscript><p class="lab-nota">Ative o JavaScript para trocar de chamado. O exemplo de DNS já está aberto.</p></noscript>
+        </form>
+        <div class="resposta-lab">
+          <div class="editor lab-output">
+            <div class="barra-editor"><span class="luzes" aria-hidden="true"></span>terminal · simulação</div>
+            <pre><code id="saida">$ ping 192.168.1.1
+Resposta de 192.168.1.1.
+
+$ ping 203.0.113.80
+Resposta de 203.0.113.80.
+
+$ nslookup portal.exemplo.test
+Tempo limite da consulta excedido.</code></pre>
+          </div>
+          <div class="lab-diagnostico" role="status" aria-live="polite" aria-atomic="true">
+            <h3 id="diagnostico">Falha na resolução DNS</h3>
+            <p id="leitura">O gateway e o servidor externo respondem por IP. A consulta pelo nome expira. Neste cenário, a falha aparece na resolução do nome.</p>
+            <p><strong>Próximo teste</strong> <span id="passo">Conferir qual servidor DNS o computador recebeu e repetir a consulta usando esse servidor.</span></p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>O que cada comando mostra</h2>
+        <dl class="comandos-rede">
+          <div><dt><code>ipconfig</code></dt><dd>Exibe endereço IP, máscara e gateway. Esses dados ajudam a verificar se o computador recebeu a configuração esperada.</dd></div>
+          <div><dt><code>ping</code></dt><dd>Testa se um destino responde a mensagens ICMP. Alguns equipamentos filtram essas mensagens, então vale comparar mais de um teste.</dd></div>
+          <div><dt><code>nslookup</code></dt><dd>Consulta o DNS para descobrir qual endereço IP corresponde a um nome.</dd></div>
+        </dl>
+      </section>
+    </div>
+
+    <nav class="largura navegacao-projeto" aria-label="Outros projetos">
+      <a class="voltar" href="../index.html#projetos"><span aria-hidden="true">←</span> Ver todos</a>
+      <a class="proximo" href="setup.html"><small>Próximo projeto</small>Por dentro do meu PC <span aria-hidden="true">→</span></a>
+    </nav>
+  </main>
+  <footer class="rodape" id="contato">
+    <div class="largura rodape-interno">
+      <div class="assinatura"><strong>João Pedro Fonseca</strong><small>Ciência da Computação · Brasília, DF</small></div>
+      <nav class="contatos" aria-label="Contatos de João Pedro">
+          <a href="https://github.com/joaozinfcc-gif">
+            <img src="../imagens/icones/github.svg" alt="" width="20" height="20">
+            <span><small>GitHub</small><strong>joaozinfcc-gif</strong></span>
+          </a>
+          <a href="https://www.instagram.com/jpedro1090/">
+            <img src="../imagens/icones/instagram.svg" alt="" width="20" height="20">
+            <span><small>Instagram</small><strong>@jpedro1090</strong></span>
+          </a>
+          <a href="https://wa.me/5561996452196">
+            <img src="../imagens/icones/whatsapp.svg" alt="" width="20" height="20">
+            <span><small>WhatsApp</small><strong>(61) 99645-2196</strong></span>
+          </a>
+          <a href="mailto:jpefcc@gmail.com">
+            <img src="../imagens/icones/email.svg" alt="" width="20" height="20">
+            <span><small>E-mail</small><strong>jpefcc@gmail.com</strong></span>
+          </a>
+      </nav>
+      <a href="#inicio" class="topo-link" aria-label="Voltar ao início">↑</a>
+    </div>
+  </footer>
+</body>
+</html>
